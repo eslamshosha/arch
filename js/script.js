@@ -193,4 +193,14 @@ $(document).ready(function () {
       ? $(".arrow-top").fadeIn(300)
       : $(".arrow-top").fadeOut(300);
   });
+  // quotation-form
+  $(".quotation-btn").click(function () {
+    $(".quotation-form").addClass("reset");
+    $(".overlay-box").fadeIn();
+  });
+  $(".cancel-form, .overlay-box").click(function (e) {
+    e.preventDefault();
+    $(".quotation-form").removeClass("reset");
+    $(".overlay-box").fadeOut(300);
+  });
 });

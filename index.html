@@ -1364,10 +1364,31 @@
               </ul>
             </div>
             <div class="show-icons">
-              <a role="button" type="button" title="" class="add-to">
-                <i class="las la-shopping-cart"></i>
-                <span class="counter">0</span>
-              </a>
+              <div class="add-to-cont">
+                <a role="button" type="button" title="" class="add-to">
+                  <i class="las la-shopping-cart"></i>
+                  <span class="counter">0</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <figure class="cart-figure">
+                      <img
+                        src="images/brands/01.jpg"
+                        alt=""
+                        class="img-fluid cart-img"
+                      />
+                    </figure>
+                    <span class="cart-name">GROHE Body Concealed</span>
+                    <button class="delete-btn">
+                      <i class="las la-trash"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="quotation-btn">احصل على تسعيرة</button>
+                    <button class="continue-btn">استمرار</button>
+                  </li>
+                </ul>
+              </div>
               <a class="menu-bars fixall" id="menu-id" href="#!">
                 <span class="bars open-bars"></span>
               </a>
@@ -1885,6 +1906,45 @@
       <i class="las la-arrow-up"></i>
     </a>
     <!-- arrow to top -->
+    <div class="quotation-form">
+      <div class="quotation-cont">
+        <h2 class="quotation-head">
+          يرجى ملء هذا النموذج ، وسوف نقدم عرض الأسعار الخاص بك والرد عليك
+          قريبا
+        </h2>
+        <form action="">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-input"
+              name=""
+              placeholder="الاسم*"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="number"
+              class="form-input"
+              name=""
+              placeholder="الهاتف*"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-input"
+              name=""
+              placeholder="البريد الالكترونى"
+            />
+          </div>
+          <div class="quotation-button-cont">
+            <button type="submit" class="send-form">ارسال</button>
+            <button class="cancel-form">الغاء</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="overlay-box"></div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
