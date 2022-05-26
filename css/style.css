@@ -747,10 +747,6 @@ html[dir="rtl"] .services-ancor {
   position: relative;
   display: flex;
   align-items: center;
-  height: 20em;
-}
-html[dir="rtl"] .gallery-cont{
-  height: 23em;
 }
 .gallery-heading {
   font-weight: 500;
@@ -855,9 +851,6 @@ html[dir="rtl"] .gallery-heading {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 20px;
-    height: 100%;
-  }
-  html[dir="rtl"] .gallery-cont{
     height: 100%;
   }
   .gallery-cont .gallery:first-of-type,
