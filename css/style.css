@@ -1568,7 +1568,6 @@ ol.breadcrumb li:not(.active):after {
   width: 100%;
   position: relative;
   background-color: var(--main-color);
-  background-image: url(../images/profile-section.png);
   background-repeat: no-repeat;
   background-position: left;
 }
