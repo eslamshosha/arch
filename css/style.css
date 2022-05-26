@@ -6,7 +6,9 @@ body {
   background-color: #f7f0eb;
   padding-top: 116px;
 }
-
+html[dir="rtl"] body {
+  font-family: "rb", sans-serif;
+}
 @media (max-width: 991px) {
   body {
     padding-top: 63px;
@@ -118,7 +120,17 @@ header {
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
-
+html[dir="rtl"] .nav-header li a {
+  font-weight: 400;
+}
+.nav-header li .lang-ancor{
+  font-family: "rb";
+  font-weight: 400;
+}
+html[dir="rtl"] .nav-header li .lang-ancor{
+  font-family: "poppins";
+  font-weight: 500;
+}
 .nav-header li a:hover {
   color: var(--main-color);
 }
@@ -211,6 +223,8 @@ header {
   transform: none;
   inset-inline-end: 0;
   inset-inline-start: auto;
+  border: none;
+  border-radius: 0;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
   min-width: 330px;
@@ -250,10 +264,14 @@ header {
   padding: 15px;
 }
 .add-to-cont li {
-  margin-bottom: 5px;
+  margin: 0;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.dropdown-btn-cont{
+  margin-top: 20px;
 }
 .cart-figure {
   border: 1px solid rgb(237, 230, 225);
@@ -277,10 +295,11 @@ header {
   background-color: transparent;
   transition: all 0.3s ease-in-out;
   font-size: 24px;
-  color: var(--main-hover);
+  margin-top: -15px;
+  color: #cccccc;
 }
 .add-to-cont .delete-btn:hover {
-  color: rgb(226, 19, 19);
+  color: #e13138;
 }
 .add-to-cont .quotation-btn {
   width: 165px;
@@ -310,6 +329,14 @@ header {
   outline: none;
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
+}
+html[dir="rtl"] .add-to-cont .quotation-btn,
+html[dir="rtl"] .add-to-cont .continue-btn{
+  font-weight: 400;
+}
+.add-to-cont .continue-btn:hover {
+  background-color: #e13138;
+  color: var(--white-color);
 }
 @media (max-width: 767px) {
   .add-to-cont .dropdown-menu {
@@ -347,6 +374,7 @@ html[dir="rtl"] .main-caption-cont {
   text-align: start;
   margin-bottom: 0;
   text-transform: capitalize;
+  padding-inline-start: 30px;
 }
 .main-img-cont {
   width: 100%;
@@ -448,6 +476,7 @@ html[dir="rtl"] .main-caption-cont {
   main .main-captions {
     font-size: 34px;
     text-align: start;
+    padding-inline-start: 20px;
   }
   .main-captions span {
     font-size: 20px;
@@ -494,6 +523,7 @@ html[dir="rtl"] .about-us {
   text-transform: capitalize;
   display: block;
   margin-bottom: 5px;
+  text-align: start;
 }
 .about-us-pargh {
   font-weight: 400;
@@ -523,6 +553,7 @@ html[dir="rtl"] .about-us {
 }
 .link-btn:hover {
   color: var(--white-color);
+  background-color: var(--main-hover);
 }
 .about-img-cont {
   position: absolute;
@@ -658,7 +689,7 @@ html[dir="rtl"] .about-us {
   transition: all 0.3s ease-in-out;
 }
 .services-ancor:hover .services-hover {
-  background-color: rgba(207, 162, 99, 0.97);
+  background-color: rgba(207, 162, 99, 0.85);
   color: var(--white-color);
 }
 .services-img {
@@ -753,7 +784,7 @@ html[dir="rtl"] .about-us {
   width: 100%;
   visibility: hidden;
   opacity: 0;
-  background-color: rgba(207, 162, 99, 0.97);
+  background-color: rgba(207, 162, 99, 0.85);
   z-index: 1;
   font-size: 60px;
   color: var(--white-color);
@@ -869,11 +900,17 @@ html[dir="rtl"] .foot-address .footer-btn i {
 .nav-foot-li .nav-foot-link:hover {
   color: var(--main-color);
 }
+.nav-foot-li span.nav-foot-link:hover {
+  color: var(--main-hover);
+}
 .foot-address .nav-foot-li:first-of-type .nav-foot-link {
   margin-bottom: 20px;
 }
 .foot-contact .nav-foot-li {
   margin-bottom: 6px;
+}
+.foot-contact .nav-foot-link {
+  text-transform: none;
 }
 .nav-underline {
   position: relative;
@@ -884,12 +921,9 @@ html[dir="rtl"] .foot-address .footer-btn i {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: #bfbdbc;
   transition: all 0.3s ease-in-out;
-}
-.nav-foot-link:hover .nav-underline::after {
-  background-color: var(--main-color);
 }
 .copy-right-cont {
   display: -webkit-box;
@@ -1198,7 +1232,7 @@ html[dir="ltr"] .cats-dispaly {
   justify-content: space-between;
   text-align: center;
   border: none;
-  padding: 15px 0;
+  padding: 10px 0;
   transition: all 0.3s ease-in-out;
 }
 .cats-div {
@@ -1226,6 +1260,7 @@ html[dir="rtl"] .cats-dispaly li {
   width: 100%;
   align-items: center;
   padding: 8px;
+  text-transform: capitalize;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease-in-out;
 }
@@ -1241,20 +1276,20 @@ html[dir="rtl"] .cats-dispaly li {
 html[dir="rtl"] .sub-list,
 html[dir="rtl"] .sub-list-3 {
   left: auto;
-  right: 100%;
+  right: calc(100% + 1px);
 }
 
 .sub-list {
   position: absolute;
   top: 0;
-  left: 101%;
+  left: calc(100% + 1px);
   width: 100%;
   min-height: 100%;
   background-color: rgba(207, 162, 99, 0.97);
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 .has-level-2:hover > .sub-list {
   opacity: 1;
@@ -1263,14 +1298,14 @@ html[dir="rtl"] .sub-list-3 {
 .sub-list-3 {
   position: absolute;
   top: 0;
-  left: 101%;
+  left: calc(100% + 1px);
   width: 100%;
   min-height: max-content;
   background-color: rgba(207, 162, 99, 0.97);
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 .has-level-2 > a > i,
 .has-level-3 > a > i {
@@ -1377,7 +1412,7 @@ html[dir="rtl"] .has-level-2 > a > i {
 /*                                 arrow-top                           */
 .arrow-top {
   position: fixed;
-  bottom: 40px;
+  bottom: 90px;
   inset-inline-end: 30px;
   display: none;
   z-index: 10;
@@ -1399,25 +1434,9 @@ html[dir="rtl"] .has-level-2 > a > i {
 .arrow-top i:hover {
   background-color: var(--main-color);
 }
-@media (max-width: 767px) {
-  .arrow-top {
-    bottom: 30px;
-    inset-inline-end: 10px;
-  }
-  .fixed-what{
-    position: fixed;
-    bottom: 80px;
-    inset-inline-end: 10px;
-  }
-  .fixed-what i {
-    width: 45px;
-    height: 45px;
-    font-size: 30px;
-  }
-}
 .fixed-what{
   position: fixed;
-  bottom: 90px;
+  bottom: 20px;
   inset-inline-end: 20px;
   z-index: 10;
   text-decoration: none !important;
@@ -1440,12 +1459,12 @@ html[dir="rtl"] .has-level-2 > a > i {
 }
 @media (max-width: 767px) {
   .arrow-top {
-    bottom: 30px;
+    bottom: 80px;
     inset-inline-end: 10px;
   }
   .fixed-what{
     position: fixed;
-    bottom: 80px;
+    bottom: 30px;
     inset-inline-end: 10px;
   }
   .fixed-what i {
@@ -1473,6 +1492,7 @@ html[dir="rtl"] .has-level-2 > a > i {
   padding: 0;
   text-transform: capitalize;
   text-align: center;
+  z-index: 2;
 }
 ol.breadcrumb {
   background-color: transparent;
@@ -1484,6 +1504,7 @@ ol.breadcrumb {
   display: flex;
   align-items: center;
   justify-content: start;
+  z-index: 2;
 }
 ol.breadcrumb li a,
 ol.breadcrumb li span,
@@ -1628,6 +1649,18 @@ ol.breadcrumb li:not(.active):after {
   padding: 130px 0;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
+}
+.custum-breadcrumb::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .custum-breadcrumb ol.breadcrumb {
   justify-content: center;
@@ -1669,9 +1702,10 @@ ol.breadcrumb li:not(.active):after {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .design-box {
-  margin-bottom: 50px;
+  margin-bottom: 57px;
   position: relative;
   display: flex;
   align-items: center;
@@ -1693,10 +1727,12 @@ html[dir="rtl"] .design-box::after {
 }
 .design-box:nth-of-type(3)::after {
   content: url(../images/big-arrow.png);
-  transform: translateY(34%);
+  transform: translateY(50%);
+  position: absolute;
+  inset-inline-end: -80px;
 }
 html[dir="rtl"] .design-box:nth-of-type(3)::after {
-  transform: translateY(34%) scaleX(-1);
+  transform: translateY(50%) scaleX(-1);
 }
 html[dir="rtl"] .design-box:nth-of-type(4)::after,
 html[dir="rtl"] .design-box:nth-of-type(5)::after {
@@ -1997,6 +2033,9 @@ html[dir="rtl"] .design-box:nth-of-type(5)::after {
   color: var(--main-hover);
   margin-bottom: 30px;
 }
+html[dir="rtl"] .quotation-head{
+  font-weight: 400;
+}
 .quotation-cont form{
   display: flex;
   flex-direction: column;
@@ -2072,9 +2111,13 @@ html[dir="rtl"] .design-box:nth-of-type(5)::after {
   outline: none;
   transition: all 0.3s ease-in-out;
 }
+html[dir="rtl"] .quotation-button-cont .cancel-form,
+html[dir="rtl"] .quotation-button-cont .send-form{
+  font-weight: 400;
+}
 .quotation-button-cont .cancel-form:hover{
   color: var(--white-color);
-  background-color: rgb(104, 22, 22);
+  background-color: #e13138;
 }
 @media (max-width: 767px){
   .quotation-cont{
