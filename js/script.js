@@ -99,58 +99,6 @@ $(document).ready(function () {
       1000
     );
   });
-  ///////// **gallery-section** /////////
-  var gallery = new Swiper(".gallery-section .gallery-one .swiper-container", {
-    loop: true,
-    autoplay: true,
-    // centeredSlides: true,
-    allowTouchMove: false,
-    slideToClickedSlide: true,
-    breakpoints: {
-      0: {
-        slidesPerView: 3,
-        spaceBetween: 15,
-      },
-      767: {
-        slidesPerView: 3,
-        spaceBetween: 15,
-      },
-      992: {
-        slidesPerView: 5,
-        spaceBetween: 30,
-      },
-      1199: {
-        slidesPerView: 5,
-        spaceBetween: 30,
-      },
-    },
-  });
-  ///////// **gallery-section** /////////
-  var screen = new Swiper(".gallery-section .gallery-two .swiper-container", {
-    loop: true,
-    autoplay: true,
-    // centeredSlides: true,
-    allowTouchMove: false,
-    slideToClickedSlide: true,
-    breakpoints: {
-      0: {
-        slidesPerView: 3,
-        spaceBetween: 15,
-      },
-      767: {
-        slidesPerView: 3,
-        spaceBetween: 15,
-      },
-      992: {
-        slidesPerView: 5,
-        spaceBetween: 30,
-      },
-      1199: {
-        slidesPerView: 5,
-        spaceBetween: 30,
-      },
-    },
-  });
   ////////////** footer transfer into accordion **//////////
 
   if ($(window).width() <= 767) {
