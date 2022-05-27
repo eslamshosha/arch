@@ -2388,22 +2388,23 @@ html[dir="rtl"] .quotation-button-cont .send-form {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: "400";
-  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--main-hover);
   width: 34px;
   height: 34px;
   margin-inline-end: 5px;
   line-height: 34px;
-  background-color: var(--main-color);
+  background-color: #ede6e1;;
   transition: all 0.3s ease-in-out;
 }
 .events-pagention i {
   font-size: 11px;
 }
+.our-work-pagention a.active,
 .our-work-pagention a:hover {
   color: #fff;
-  background-color: var(--main-hover);
+  background-color: var(--main-color);
 }
 @media (max-width: 767px) {
   .our-work-section {
