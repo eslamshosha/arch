@@ -2398,8 +2398,8 @@ html[dir="rtl"] .quotation-button-cont .send-form {
   background-color: #ede6e1;;
   transition: all 0.3s ease-in-out;
 }
-.events-pagention i {
-  font-size: 11px;
+html[dir="rtl"] .our-work-pagention a i {
+  transform: scaleX(-1);
 }
 .our-work-pagention a.active,
 .our-work-pagention a:hover {
