@@ -1101,9 +1101,9 @@ html[dir="rtl"] .footer-accordion.active:after {
   .foot-address .footer-btn {
     margin: 0 auto 30px;
   }
-  .nav-foot-link {
+  /* .nav-foot-link {
     width: auto;
-  }
+  } */
   .copy-right-cont {
     flex-direction: column;
     justify-content: center;
@@ -1397,6 +1397,9 @@ html[dir="rtl"] .has-level-2 > a > i {
   opacity: 1;
   visibility: visible;
 }
+.btn-div > i{
+  display: none;
+}
 @media (max-width: 991px) {
   .cats-div {
     align-items: center;
@@ -1466,16 +1469,24 @@ html[dir="rtl"] .has-level-2 > a > i {
     right: 0;
     transform: translateX(0);
   }
+  .btn-div > i{
+    display: inline-flex;
+  }
+  .btn-div > i::before, 
   .has-level-2 > a > i::before,
   .has-level-3 > a > i::before {
     content: "";
     margin-inline-start: 4px;
+    display: flex;
+    justify-content: center;
+    width: 25px;
   }
+  .btn-div.active >i::before, 
   .has-level-2 > a.active > i::before,
   .has-level-3 > a.active > i::before {
     content: "";
   }
-  .chevron-down::after {
+  /* .chevron-down::after {
     content: "";
     font-family: "line Awesome Free";
     font-size: 12px;
@@ -1484,7 +1495,7 @@ html[dir="rtl"] .has-level-2 > a > i {
   }
   .active.chevron-down::after {
     content: "";
-  }
+  } */
 }
 
 /*                                 arrow-top                           */
