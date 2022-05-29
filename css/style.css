@@ -207,7 +207,9 @@ html[dir="rtl"] .nav-header li .lang-ancor {
   position: relative;
   padding: 0;
   margin: 0;
-  background-color: #e13138;
+  width: auto;
+  min-width: auto;
+  background-color: #000;
   font-size: 36px;
   display: flex;
   text-align: center;
