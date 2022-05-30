@@ -1004,6 +1004,7 @@ html[dir="rtl"] .foot-header {
   font-weight: 400;
   display: flex;
   width: max-content;
+  text-align: start;
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
 }
@@ -1060,6 +1061,7 @@ html[dir="rtl"] .foot-address .footer-btn i {
 }
 .foot-contact .nav-foot-li {
   margin-bottom: 6px;
+  text-align: start;
 }
 .foot-contact .nav-foot-link {
   text-transform: none;
