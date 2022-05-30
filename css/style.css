@@ -784,10 +784,10 @@ html[dir="rtl"] .gallery-heading {
   font-weight: 400;
 }
 
-.gallery-cont .gallery-figure {
+.gallery-figure {
   margin: 0;
 }
-.gallery-cont .gallery .gallery-figure{
+.gallery .gallery-figure{
   overflow: hidden;
   padding-top: 100%;
   position: relative;
@@ -834,7 +834,7 @@ html[dir="rtl"] .gallery-heading {
   }
 }
 
-.gallery-cont .gallery-img {
+.gallery-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1916,7 +1916,7 @@ html[dir="rtl"] .team-name {
     display: none;
   }
   .breadcrumb-sec .page-head {
-    color: var(--main-color);
+    color: var(--main-hover);
   }
 }
 .design-page-title {
@@ -2362,10 +2362,10 @@ html[dir="rtl"] .design-box span {
 }
 @media (max-width: 991px) {
   .breadcrumb-sec .page-head {
-    font-size: 36px;
+    font-size: 24px;
   }
   .Partners-section {
-    padding: 80px 0 30px;
+    padding: 80px 0 0px;
   }
   .partner-head {
     font-size: 26px;
@@ -2393,7 +2393,7 @@ html[dir="rtl"] .design-box span {
 }
 @media (max-width: 767px) {
   .custum-services .services-cont {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 }
@@ -2822,6 +2822,9 @@ html[dir="rtl"] .our-work-pagention a i {
   .our-work-cont {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+  }
+  .our-work-pagention{
+    margin-top: 30px;
   }
 }
 /* our-work-section */

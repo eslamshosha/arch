@@ -128,14 +128,15 @@ $(document).ready(function () {
   if ($(window).width() < 991) {
     // gallery one
     $(".gallery-section .gallery-container").addClass("container");
-    $(".gallery-swiper-one .gallery-swiper-cont").addClass("swiper-container");
-    $(".gallery-swiper-one .gallery-cont").addClass("swiper-wrapper");
-    $(".gallery-swiper-one .gallery").addClass("swiper-slide");
-    var galleryO = new Swiper(".gallery-swiper-one .swiper-container", {
+    $(".gallery-section .gallery-swiper-cont").addClass("swiper-container");
+    $(".gallery-section .gallery-cont").contents().unwrap();
+    $(".gallery-section .gallery-swiper-wrapper").addClass("swiper-wrapper");
+    $(".gallery-section .gallery").addClass("swiper-slide");
+    var galleryO = new Swiper(".gallery-section .swiper-container", {
       loop: true,
       autoplay: true,
       pagination: {
-        el: ".gallery-swiper-one .swiper-pagination",
+        el: ".gallery-section .swiper-pagination",
         clickable: true,
       },
       breakpoints: {
