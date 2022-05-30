@@ -1903,7 +1903,7 @@ html[dir="rtl"] .team-name {
 .custum-breadcrumb ol.breadcrumb li {
   color: var(--white-color);
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .custum-breadcrumb,
   .breadcrumb-sec {
     background: none !important;
@@ -2537,10 +2537,13 @@ html[dir="rtl"] .tools-hover .add-to-cart {
     width: 180px;
     height: 45px;
   }
+  .tools-head{
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .tools-cont {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   .tools-ancor figure {
