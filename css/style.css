@@ -2544,10 +2544,10 @@ html[dir="rtl"] .tools-hover .add-to-cart {
 @media (max-width: 767px) {
   .tools-cont {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px 20px;
   }
   .tools-ancor figure {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .tools-ancor {
     font-size: 16px;
