@@ -1481,7 +1481,7 @@ html[dir="rtl"] .sub-list-3 {
 }
 .has-level-2 > a > i,
 .has-level-3 > a > i {
-  font-size: 12px;
+  font-size: 14px;
 }
 html[dir="rtl"] .has-level-3 > a > i,
 html[dir="rtl"] .has-level-2 > a > i {
@@ -1565,12 +1565,12 @@ html[dir="rtl"] .has-level-2 > a > i {
   }
   .btn-div > i {
     display: inline-flex;
-    font-size: 12px;
+    font-size: 14px;
   }
   .btn-div > i::before,
   .has-level-2 > a > i::before,
   .has-level-3 > a > i::before {
-    content: "";
+    content: "";
     margin-inline-start: 4px;
     display: flex;
     justify-content: center;
@@ -1578,7 +1578,7 @@ html[dir="rtl"] .has-level-2 > a > i {
   .btn-div.active > i::before,
   .has-level-2 > a.active > i::before,
   .has-level-3 > a.active > i::before {
-    content: "";
+    content: "";
   }
   /* .chevron-down::after {
     content: "";
@@ -2207,7 +2207,7 @@ html[dir="rtl"] .design-box span {
   html[dir="ltr"] .design-box:nth-of-type(2)::after {
     right: auto;
     left: calc(87%);
-    bottom: -106.2%;
+    bottom: -105.8%;
     transform: none;
   }
   .design-box:nth-of-type(3)::before {
@@ -2247,7 +2247,7 @@ html[dir="rtl"] .design-box span {
     opacity: 1;
   }
   html[dir="ltr"] .design-box:nth-of-type(3)::after {
-    top: 36.5%;
+    top: 35.2%;
     left: auto;
     right: calc(110.6%);
     bottom: auto;
@@ -2295,7 +2295,7 @@ html[dir="rtl"] .design-box span {
   html[dir="ltr"] .design-box:nth-of-type(4)::after {
     left: auto;
     right: calc(87%);
-    bottom: -106.5%;
+    bottom: -105.8%;
     transform: scaleX(-1);
   }
   .design-box:nth-of-type(5)::before {
