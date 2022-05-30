@@ -1327,7 +1327,7 @@ html[dir="rtl"] .footer-accordion.active:after {
   .nav-header li a:hover {
     color: var(--white-color);
   }
-  .nav-header li:last-child {
+  .big-menu>li:last-child {
     display: none;
   }
   /*                    menu in phone size                      */
